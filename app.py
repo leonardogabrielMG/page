@@ -14,6 +14,8 @@ def process_form():
     with open('static/file.txt', 'a') as file:
         file.write(nome + '\n')
 
+    print(f"nome: {nome}")
+
     return redirect(url_for('result'))
 
 @app.route('/result')
